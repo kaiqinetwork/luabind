@@ -178,7 +178,7 @@ namespace
         lua_settable(L, LUA_REGISTRYINDEX);
 
         // add functions (class, cast etc...)
-        lua_pushstring(L, "class");
+        lua_pushstring(L, "luabind_class");
         lua_pushcclosure(L, detail::create_class::stage1, 0);
         lua_settable(L, LUA_GLOBALSINDEX);
 
