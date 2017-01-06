@@ -13,15 +13,6 @@
 # include <boost/mpl/next.hpp>
 # include <boost/mpl/size.hpp>
 
-namespace luabind {
-
-class object;
-class argument;
-template <class Base>
-struct table;
-
-} // namespace luabind
-
 namespace luabind { namespace detail {
 
 LUABIND_API std::string get_class_name(lua_State* L, type_id const& i);
